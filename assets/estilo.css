@@ -1,0 +1,82 @@
+:root{
+  --ciano:#08B6E3; --ciano2:#01C6CC; --azul-med:#28A1C5; --azul:#1469A5; --azul-escuro:#084382;
+  --teal:#1A6A82; --areia:#FAF6EE; --cinza:#7A8587; --azul-claro:#86B2C6; --branco:#fff;
+  --texto:#1D3A52; --fonte-titulo:'Archivo','Century Gothic',system-ui,sans-serif; --fonte-texto:'Karla','Segoe UI',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--fonte-texto);color:var(--texto);background:var(--branco);line-height:1.5;font-size:17px}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(100% - 40px, 640px);margin-inline:auto}
+h1,h2,h3{font-family:var(--fonte-titulo);color:var(--azul-escuro);line-height:1.12;letter-spacing:-.012em}
+h2{font-size:1.25rem;font-weight:800;margin-bottom:12px}
+p{margin-bottom:12px}
+
+/* topo */
+.topo{padding:18px 0 14px;border-bottom:3px solid var(--ciano2)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topo .logo{width:168px}
+.topo .voltar{font-weight:700;font-size:.9rem;color:var(--azul);text-decoration:none;white-space:nowrap}
+
+/* herói da argila */
+.heroi{padding:28px 0 22px;background:var(--areia)}
+.heroi .wrap{display:grid;grid-template-columns:96px 1fr;column-gap:18px;align-items:center}
+.sw{width:88px;height:88px;border-radius:50%;background:var(--cor);border:2px solid var(--contorno,transparent);box-shadow:0 0 0 4px #fff,0 0 0 6px var(--cor)}
+.heroi .sobre{font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:4px}
+.heroi h1{font-size:2rem;font-weight:900}
+.heroi .ben{font-size:1.05rem;font-weight:700;color:var(--teal);margin:6px 0 10px}
+.chip{display:inline-block;font-weight:700;font-size:.85rem;color:var(--azul);border:1.5px solid var(--azul-claro);border-radius:999px;padding:5px 12px;background:#fff}
+
+/* seções */
+section.bloco{padding:26px 0 6px}
+section.bloco + section.bloco{border-top:1px solid #E3EBF0}
+.lista{list-style:none;display:grid;gap:10px;margin-bottom:14px}
+.lista li{display:grid;grid-template-columns:18px 1fr;column-gap:10px;align-items:start;font-weight:600}
+.lista li::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--ciano);margin-top:8px;justify-self:center}
+.passos{list-style:none;counter-reset:p;display:grid;gap:12px;margin-bottom:14px}
+.passos li{display:grid;grid-template-columns:34px 1fr;column-gap:12px;align-items:center;counter-increment:p;font-weight:600}
+.passos li::before{content:counter(p);width:32px;height:32px;border-radius:50%;background:var(--ciano);color:#fff;font-family:var(--fonte-titulo);font-weight:800;display:grid;place-items:center;font-size:1rem}
+.cuidados{background:var(--areia);border-radius:14px;padding:16px 18px;margin-bottom:18px}
+.cuidados h2{font-size:1.05rem;margin-bottom:8px}
+.cuidados ul{padding-left:18px;display:grid;gap:6px;font-size:.98rem}
+
+/* chamada para contato (brief Moana §10.2: botão sólido #084382 sobre fundo claro) */
+.cta{margin:18px 0 0;background:var(--areia);border-top:3px solid var(--ciano2);padding:30px 0 28px}
+.cta h2{font-size:1.45rem;font-weight:900;margin-bottom:6px}
+.cta p{color:var(--texto);margin-bottom:18px}
+.botao{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;border-radius:14px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--fonte-titulo);font-weight:800;font-size:1.05rem;letter-spacing:.005em;box-shadow:0 2px 0 #1DA851}
+.botao svg{width:26px;height:26px;fill:#fff}
+.botao.sec{background:#fff;border:2px solid var(--azul-claro);color:var(--azul);margin-top:10px;font-weight:700;box-shadow:none}
+.msg-pronta{margin:12px 0 0;text-align:center;font-size:.92rem;color:var(--teal);font-weight:600}
+.msg-pronta q{font-style:italic;color:var(--azul-escuro);font-weight:700}
+.cta .cons{margin:18px 0 0;font-family:var(--fonte-titulo);font-weight:800;color:var(--azul-escuro);font-size:1rem;text-align:center}
+.cta .cons span{display:block;font-family:var(--fonte-texto);font-weight:600;color:var(--cinza);font-size:.9rem;margin-top:2px}
+.cta .outra{margin:12px 0 0;text-align:center;font-size:.86rem;color:var(--cinza);font-weight:600}
+.cta .outra a{color:var(--azul);font-weight:800;text-decoration:none}
+
+/* rodapé */
+.rodape{padding:22px 0 34px;font-size:.88rem;color:var(--cinza);text-align:center}
+.rodape b{color:var(--azul);font-weight:800}
+
+/* hub */
+.hub-heroi{padding:30px 0 10px;text-align:center}
+.hub-heroi h1{font-size:1.9rem;font-weight:900}
+.hub-heroi p{color:var(--teal);font-weight:600}
+.cartoes{list-style:none;display:grid;gap:12px;padding:16px 0 10px}
+.cartao{display:grid;grid-template-columns:60px 1fr 22px;column-gap:14px;align-items:center;padding:14px 16px;border:1.5px solid #E3EBF0;border-radius:16px;text-decoration:none;background:#fff}
+.cartao .sw{width:54px;height:54px;box-shadow:0 0 0 3px #fff,0 0 0 4.5px var(--cor)}
+.cartao h3{font-size:1.1rem;font-weight:800}
+.cartao p{margin:2px 0 0;font-size:.92rem;color:var(--teal);font-weight:600}
+.cartao::after{content:"";width:12px;height:12px;border-right:2.5px solid var(--azul);border-bottom:2.5px solid var(--azul);transform:rotate(-45deg);justify-self:center}
+
+@media (min-width:720px){
+  body{font-size:18px}
+  .heroi .wrap{grid-template-columns:120px 1fr;column-gap:24px}
+  .sw{width:108px;height:108px}
+  .heroi h1{font-size:2.5rem}
+  .cta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;align-items:start}
+  .cta h2,.cta p{grid-column:1/-1}
+  .botao.sec{margin-top:0}
+  .cta .cons{grid-column:1/-1}
+}
