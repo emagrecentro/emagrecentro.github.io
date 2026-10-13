@@ -47,6 +47,8 @@ section.bloco + section.bloco{border-top:1px solid #E3EBF0}
 .cta p{color:var(--texto);margin-bottom:18px}
 .botao{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:58px;border-radius:14px;background:#25D366;color:#fff;text-decoration:none;font-family:var(--fonte-titulo);font-weight:800;font-size:1.05rem;letter-spacing:.005em;box-shadow:0 2px 0 #1DA851}
 .botao svg{width:26px;height:26px;fill:#fff}
+.botao+.botao{margin-top:10px}
+.cta .escolha{margin:0 0 8px;text-align:center;font-size:.86rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
 .botao.sec{background:#fff;border:2px solid var(--azul-claro);color:var(--azul);margin-top:10px;font-weight:700;box-shadow:none}
 .msg-pronta{margin:12px 0 0;text-align:center;font-size:.92rem;color:var(--teal);font-weight:600}
 .msg-pronta q{font-style:italic;color:var(--azul-escuro);font-weight:700}
@@ -77,6 +79,6 @@ section.bloco + section.bloco{border-top:1px solid #E3EBF0}
   .heroi h1{font-size:2.5rem}
   .cta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;align-items:start}
   .cta h2,.cta p{grid-column:1/-1}
-  .botao.sec{margin-top:0}
+  .botao+.botao,.botao.sec{margin-top:0}
   .cta .cons{grid-column:1/-1}
 }
